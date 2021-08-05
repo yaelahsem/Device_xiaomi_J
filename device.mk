@@ -119,18 +119,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-focal.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-focal.kl \
     $(LOCAL_PATH)/keylayout/uinput-cdfinger.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-cdfinger.kl
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_juice
-
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti-juice \
-    android.hardware.power-service-qti-juice.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power_qti/power.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/power.xml \
-    $(LOCAL_PATH)/power_qti/powerhint.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/powerhint.xml
+    android.hardware.power-service-qti
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
